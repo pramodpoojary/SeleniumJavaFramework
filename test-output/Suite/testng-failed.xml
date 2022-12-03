@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="pramodpoojay.testcomponents.Listners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation(failed)">
+    <classes>
+      <class name="pramodpoojary.SeleniumFrameworkDesign.errorValidation">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="teardown"/>
+          <include name="errorMessageProdcut"/>
+        </methods>
+      </class> <!-- pramodpoojary.SeleniumFrameworkDesign.errorValidation -->
+    </classes>
+  </test> <!-- Error Validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

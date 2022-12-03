@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="ErrorHandling" />
+		</run>
+	</groups>
+	<!-- if we make paralle='method' then tests within the file also will run parallal count='5' means number of test running paralel-->
+	<test thread-count="5" name="Error Validation">
+		<classes>
+			<class name="pramodpoojary.SeleniumFrameworkDesign.errorValidation" />
+
+		</classes>
+	</test>
+	<test thread-count="5" name="Submit order">
+		<classes>
+			<class name="pramodpoojary.SeleniumFrameworkDesign.submitOrder" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Standalone test">
+		<classes>
+			<class name="pramodpoojary.SeleniumFrameworkDesign.standalonetest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
